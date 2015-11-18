@@ -9,21 +9,21 @@ import com.sap.model.Person;
 @Controller
 public class PersonController {
 
-	@RequestMapping("/addPerson")
-	public String addPersonURL(){
-		return "addPerson";
-	}
-	
 //	@RequestMapping("/addPerson")
-//	public ModelAndView registra(Person person){
-//		
-//		//confirma-registro is the .jsp file that is going to be displayed 
-// 		ModelAndView mv = new ModelAndView("addPerson");
-//		mv.addObject("person", person);
-//		
-//		//System.out.println(produto.getNome() + " - " + produto.getValor());
-//
-//		return mv;
+//	public String addPersonURL(){
+//		return "addPerson";
 //	}
+	
+	@RequestMapping("/addPerson")
+	public ModelAndView registra(Person person){
+		
+		//confirma-registro is the .jsp file that is going to be displayed 
+ 		ModelAndView mv = new ModelAndView("addPerson");
+		mv.addObject("person", person);
+		
+		//System.out.println(produto.getNome() + " - " + produto.getValor());
+
+		return mv;
+	}
 }
 

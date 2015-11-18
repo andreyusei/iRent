@@ -9,6 +9,8 @@
 <body>
 
 <h3>New user inserted!</h3>
+<p>Id: ${person.id}</p>
+<p>Name: ${person.name}</p>
 
 
 </body>
